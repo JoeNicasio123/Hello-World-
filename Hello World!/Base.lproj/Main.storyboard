@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zK8-2C-aa3">
-                                <rect key="frame" x="73.333333333333329" y="79" width="246.33333333333337" height="29"/>
+                                <rect key="frame" x="73.333333333333314" y="79" width="246.33333333333337" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,6 +40,9 @@
                                 <rect key="frame" x="147.66666666666666" y="172" width="98" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Tap Here!"/>
+                                <connections>
+                                    <action selector="showOutput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roN-y1-HMK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,6 +59,10 @@
                             <constraint firstItem="XIr-8A-8zw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qic-Wh-gHc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblOutput" destination="XIr-8A-8zw" id="duN-7e-jvw"/>
+                        <outlet property="txtName" destination="wdW-mz-uPc" id="U8v-8g-gj2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
